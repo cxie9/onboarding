@@ -6,22 +6,21 @@ html{
     
 }
 
-#header {
+#top {
     text-align: center;
     font-family: 'Old Standard TT', serif;
-    font-size: 3em;
+    font-size: 2.5em;
     color:dimgray;
-    width: 100%;
-    height:0.8em;
-    
+    width: 100%;    
     
 }
 
 body {
     position: relative;
     overflow-x: hidden;
-    background-image: url(pawbg.jpg);
-    background-size: cover;
+    background-image: url(homebg.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
     font-size: 1.05em;
     line-height: 1.25em;
     
@@ -38,72 +37,25 @@ body {
     text-align: center;    
 }
 
+#contact{
+    font-family: 'Arvo', serif;
+    color:darkslategrey;
+    text-align: center;
+    padding: 1em;
 
+
+}
 
 #list {
-    list-style: none;
-    padding:0 0 0 20px;
+    list-style:none;
+    padding:2em;
     position: relative;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: 'Arvo', serif;
     color:darkslategrey;
     text-align: left;
     
-}
-
-#signup{
-    background-image: url(pawphoto.jpg);
-    background-size:cover;
-    background-repeat:round;
-    
-}
-
-#furhome{
-    background-image: url(homebg.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    
-}
-
-#nav {
-	width:100%;
-	text-align: center;
-	line-height: 1em;
-
-     }
-
-.navbutton {
-    box-sizing:content-box;
-    position: relative;
-    float: left;
-    text-transform: uppercase;
-    padding: 0 20px;
-    width: 100%;
-    text-align: center;
-    border-bottom:0.5em;
-    border-bottom-style:dotted;
-    border-top:0.5em;
-    border-color:beige;
-    border-top-style:dotted;
-    background-color:darkgray;
-    font-family:'Arvo', serif;
-    color: darkslategrey;
-     -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    display: block;
-}
-
-.active {
-    background-color: beige;
-}
-
-#contact{
-    margin: 3em;
-    text-align:left;
-    font-family: 'Arvo', serif;
-    color:darkslategrey;
 }
 
 label{
@@ -115,67 +67,22 @@ label{
   -ie-text-size-adjust: 100%;
   text-size-adjust: 100%;
   display: block;
-  margin: 0;
   margin-bottom: 2em;
   width: 100%; 
   height: 2em;
   line-height: 5em; 
   font-size: 1em;
   border: 1em solid #ccc;
+  text-align: center;
+
 }
-
-
-#pawprint{
-    width: 2em;
-    height: 2em;
-}
-
-#checkbox{
-    width: 1em;
-    height: 1em;
-}
-
-
-.navbar {
-    position: relative;
-    width: 28%;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 40px;
-    padding-top: 20px;
-    float: left;
-    
-    
-}
-
-#active {
-    background-color: beige;
-}
-
 
 select {
     background-color: floralwhite;
     font-family: 'Arvo', serif;
 }
 
-input: required {
-    font-family: 'Arvo', serif;
-    background-color: floralwhite;
-}
-
-input:invalid {
-  background-color: ghostwhite;
-  font-family: 'Arvo', serif;
-}
-
-
-input:valid {
-  background-color: floralwhite;
-}
-
-@media only screen and (min-width: 768px) {
- 
-    input, select{
+input, select{
      -webkit-appearance: none; 
       -moz-appearance: none; 
       -ie-appearance: none;
@@ -183,7 +90,6 @@ input:valid {
       -mox-text-size-adjust: 100%;
       -ie-text-size-adjust: 100%;
       text-size-adjust: 100%;
-      display: block;
       width: 40%; 
       margin-bottom: 20px;    
       height: 2em;
@@ -191,88 +97,20 @@ input:valid {
       font-size: 1em;
       border: 0.1em solid #ccc; 
       background-color: ghostwhite;
-    } 
-   
-    #nav {
-        position: absolute;
-        top: 4em;
-        right: 10px;
-        background: none;
-    }
-     
-    #nav li {
-        display: inline;
-    }
-     
-    #nav li a {
-        float: left;
-        border: none;
-        padding: 0 10px;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-    }
-    
-    #menu {
-    float: right;
-    font-family: 'Arvo', serif;
-    display: none;
-    }
-    
-    #calendar{
-    width: 30em;
-    height: 10em;
+    }  
+#pick{
+    width:9em;
 }
-}
-@media only screen and (max-width: 767px) {
-
-    #menu {
-        float: right;
-        font-family: 'Arvo', serif;
-        display: block;
-    
-    }
-    
-    input, select{
-      -webkit-appearance: none; 
-      -moz-appearance: none; 
-      -ie-appearance: none;
-      -webkit-text-size-adjust: 100%;
-      -mox-text-size-adjust: 100%;
-      -ie-text-size-adjust: 100%;
-      text-size-adjust: 100%;
-      display: block;
-      margin: 0;
-      margin-bottom: 20px;
-      width: 100%; 
-      height: 2em;
-      line-height: 3em; 
-      font-size: 1em;
-      border: 0.1em solid #ccc; 
-      background-color: ghostwhite;
-
-    }
-    
-    #calendar{
-    width: 10em;
-    height: 10em;
-    }
-}
-
 
 #submit {
     padding-bottom: 2.5em;
     width:5em;
     border-radius:0.5em;
-    background-color: darkslategrey;
-    color: aliceblue;
+    background-color: aliceblue;
     font-size: 1em;
     }
-
-#reset {
-    padding-bottom: 2.5em;
-    width:5em;
-    border-radius:0.5em;
-    background-color: darkslategrey;
-    font-size: 1em;
+.js #submit{
+    display: none;
 }
+
+

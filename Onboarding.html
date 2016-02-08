@@ -4,26 +4,20 @@
     <title>Onboarding</title>
     <meta charset="utf-8">
     <!--Mobile specific-->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1", shrink-to-fit="no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0", shrink-to-fit="no">
     <!--css-->
     <link rel="stylesheet" href="Onboarding.css">
     <link rel="stylesheet" href="reset.css">
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
     <!--icon-->
-    <link rel=shortcut href="pawprint.jpg">
 </head>
-    <header id="menu">
-        <a class="tonavbar" href="#nav">Menu</a>
+    <header id=top>
+        <h1>Furtography</h1>
     </header>
-    <body id="furhome">
-        <div id="header"><h1>Furtography</h1></div>
-        <pre>     </pre>
-        
-        <!--About furtograhy; need to add javascript click/hover for photo examples-->
-        <p id = "about">
+    <body>
+        <div id = "about">
         Finally, portraiture befitting the king or queen of your household. Furtopgraphy places your fluffy friends where they belong: glaring down at you from the finest moments in art history. Some examples include:
-        </p><br><br/>
             <ul id="list">
                 <li>The Meowna Lisa</li>
                 <li>The Starry Bite</li>
@@ -32,20 +26,35 @@
                 <li>Kitty Bonaparte</li>
                 <li>Mitzy a la Rococo</li>
             </ul>
-          <script src="P1myscripts.js"></script>
-    </body>
-    <!--navigation bar-->
-        <div id="nav">
-            <div class="navbutton">
-                <ul>
-                <li><nav id="active" class="navbar">
-                    <a href="Onboarding.html">Home</a>
-                    </nav></li>
-                <li><nav class="navbar">
-                    <a href="OnboardingForm.html">Schedule Session</a>
-                    </nav></li>
-                </ul>
-            </div>
         </div>
-</html> <!--test-->`
+         <div id="contact">                    
+                <p>Schedule your session with one of our professional furtographers! </p>
+                <form id="contact" action"/" method="POST" autocomplete="on">
+                    <label for="pname">Pet's Name</label>
+                    <input type="text" id = "pname" required placeholder="Fluffy's Name" class="input" title="Enter your pet's name here."/>
+                    <label for="telephone">Digits (Opt.)</label>
+                    <input type="telephone" placeholder="Phone Number" class="input" id="telephone" title="Enter your phone number"/>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="pet@furry.com" class="input" title="Enter your email" pattern="^.+@.+$"/>
+                    <label for="pick">Select an Era:</label> 
+                    <select id="pick" required>
+                        <option value="select"></option>
+                        <option value="stoneage">Stone Age</option>
+                        <option value="egyptian">Egyptian</option>
+                        <option value="greek">Roman</option>
+                        <option value="renaissance">The Renaissance</option>
+                        <option value="romanticism">Romanticism</option>
+                        <option value="realism">Realism</option>
+                        <option value="impressionism">Impressionism</option>
+                        <option value="cubism">Cubism</option>
+                        <option value="surrealism">Surrealism</option>
+                        <option value="popart">Pop Art</option>]
+                        <option value="postmodern">Post Modern</option>
+                    </select>
+                    <input type="submit" value="Submit" id="submit" disabled="disabled"/>
+            </form>        
+        </div>
+         <script src="P1submit.js"></script>
+    </body>
+</html>
 
