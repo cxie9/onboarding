@@ -4,7 +4,7 @@
     <title>Onboarding</title>
     <meta charset="utf-8">
     <!--Mobile specific-->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0", shrink-to-fit="no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" ,shrink-to-fit="no">
     <!--css-->
     <link rel="stylesheet" href="Onboarding.css">
     <link rel="stylesheet" href="reset.css">
@@ -12,10 +12,10 @@
     <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
     <!--icon-->
 </head>
-    <header id=top>
+    <body>
+        <header id=top>
         <h1>Furtography</h1>
     </header>
-    <body>
         <div id = "about">
         Finally, portraiture befitting the king or queen of your household. Furtopgraphy places your fluffy friends where they belong: glaring down at you from the finest moments in art history. Some examples include:
             <ul id="list">
@@ -29,16 +29,16 @@
         </div>
          <div id="contact">                    
                 <p>Schedule your session with one of our professional furtographers! </p>
-                <form id="contact" action"/" method="POST" autocomplete="on">
+                <form id="fields" action="#" method="POST" autocomplete="on">
                     <label for="pname">Pet's Name</label>
                     <input type="text" id = "pname" required placeholder="Fluffy's Name" class="input" title="Enter your pet's name here."/>
                     <label for="telephone">Digits (Opt.)</label>
-                    <input type="telephone" placeholder="Phone Number" class="input" id="telephone" title="Enter your phone number"/>
+                    <input type="tel" placeholder="Phone Number" class="input" id="telephone" title="Enter your phone number"/>
                     <label for="email">Email</label>
                     <input type="email" id="email" required placeholder="pet@furry.com" class="input" title="Enter your email" pattern="^.+@.+$"/>
                     <label for="pick">Select an Era:</label> 
                     <select id="pick" required>
-                        <option value="select"></option>
+                        <option value="">Choose</option>
                         <option value="stoneage">Stone Age</option>
                         <option value="egyptian">Egyptian</option>
                         <option value="greek">Roman</option>
@@ -48,7 +48,7 @@
                         <option value="impressionism">Impressionism</option>
                         <option value="cubism">Cubism</option>
                         <option value="surrealism">Surrealism</option>
-                        <option value="popart">Pop Art</option>]
+                        <option value="popart">Pop Art</option>
                         <option value="postmodern">Post Modern</option>
                     </select>
                     <input type="submit" value="Submit" id="submit" disabled="disabled"/>
