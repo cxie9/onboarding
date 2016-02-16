@@ -1,6 +1,5 @@
 $("body").addClass("js");
 var pname = document.getElementById('pname');
-var telephone = document.getElementById('telephone');
 var email = document.getElementById('email');
 var pick = document.getElementById('pick');
 var form = document.getElementById('fields');
