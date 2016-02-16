@@ -9,13 +9,11 @@ form.addEventListener('keyup', function yolo(){
     form.addEventListener('click', function swag(){
         flag = false;
         if(pname.value != ""){
-            if(telephone.value != ""){
                 if(email.value != ""){
                     if(pick.value != ""){
                         flag = true;
                     }
                 }
-            }
         }
         if(flag == true){
             submit.style.display = "inline"
