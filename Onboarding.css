@@ -19,7 +19,7 @@ body {
     position: relative;
     overflow-x: hidden;
     background-image: url(homebg.jpg);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     font-size: 1.05em;
     line-height: 1.25em;    
@@ -33,7 +33,8 @@ body {
     margin-top: 20%;
     font-family: 'Arvo', serif;
     color:darkslategrey;
-    text-align: center;    
+    text-align: center;
+    font-size:0.8em;
 }
 
 #contact{
@@ -41,6 +42,7 @@ body {
     color:darkslategrey;
     text-align: center;
     padding: 1em;
+    border-top: 0.1em solid darkslategrey;
 
 
 }
@@ -53,8 +55,7 @@ body {
     margin-right: 10%;
     font-family: 'Arvo', serif;
     color:darkslategrey;
-    text-align: left;
-    
+    text-align: left;    
 }
 
 label{
@@ -90,8 +91,8 @@ input, select{
       -ie-text-size-adjust: 100%;
       text-size-adjust: 100%;
       width: 40%; 
-      margin-bottom: 20px;    
-      height: 2em;
+      margin-bottom: 2em;    
+      height: 3em;
       line-height: 3em; 
       font-size: 1em;
       border: 0.1em solid #ccc; 
@@ -107,15 +108,42 @@ input, select{
     height: 2em;
 }
 
+
 #submit {
-    padding-bottom: 2.5em;
+    padding-bottom: 1em;
     width:5em;
     border-radius:0.5em;
-    background-color: aliceblue;
-    font-size: 1em;
+    background-color:lightgoldenrodyellow;
+    font-size: 0.8em;
     }
-.js #submit{
+
+.js #submit {
     display: none;
+}
+
+@media (max-width: 767px) {
+    body {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url(homebg.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    font-size: 1.05em;
+    line-height: 1.25em;    
+    }
+    
+    #list {
+    list-style:none;
+    padding:2em;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50%;
+    font-family: 'Arvo', serif;
+    color:darkslategrey;
+    text-align: left;
+    font-size: 0.8em;
+    }
 }
 
 
