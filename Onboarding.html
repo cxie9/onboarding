@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Onboarding</title>
+    <meta charset="utf-8">
+    <!--Mobile specific-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" ,shrink-to-fit="no">
+    <!--css-->
+    <link rel="stylesheet" href="Onboarding.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
+</head>
+    <body>
+        <header id=top>
+        <h1>Furtography</h1>
+    </header>
+        <div id = "about">
+        Finally, portraiture befitting the king or queen of your household. Furtopgraphy places your fluffy friends where they belong: glaring down at you from the finest moments in art history. Some examples include:
+            <ul id="list">
+                <li>The Meowna Lisa</li>
+                <li>The Starry Bite</li>
+                <li>Gerbil with the Pearl Earring</li>
+                <li>Fluffy Crossing the Delaware</li>
+                <li>Kitty Bonaparte</li>
+                <li>Mitzy a la Rococo</li>
+            </ul>
+        </div>
+         <div id="contact">                    
+                <p>Schedule your session with one of our professional furtographers! </p>
+                <form id="fields" action="#" method="POST" autocomplete="on">
+                    <label for="pname">Pet's Name</label>
+                    <input type="text" id = "pname" required placeholder="Fluffy's Name" class="input" title="Enter your pet's name here."/>
+                    <label for="telephone">Digits (Opt.)</label>
+                    <input type="tel" placeholder="Phone Number" class="input" id="telephone" title="Enter your phone number"/>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="pet@furry.com" class="input" title="Enter your email" pattern="^.+@.+$"/>
+                    <label for="pick">Select an Era:</label> 
+                    <select id="pick" required>
+                        <option value="">Choose</option>
+                        <option value="stoneage">Stone Age</option>
+                        <option value="egyptian">Egyptian</option>
+                        <option value="greek">Roman</option>
+                        <option value="renaissance">The Renaissance</option>
+                        <option value="romanticism">Romanticism</option>
+                        <option value="realism">Realism</option>
+                        <option value="impressionism">Impressionism</option>
+                        <option value="cubism">Cubism</option>
+                        <option value="surrealism">Surrealism</option>
+                        <option value="popart">Pop Art</option>
+                        <option value="postmodern">Post Modern</option>
+                    </select>
+                    <input type="submit" id="submit">
+                    <img id = "pawpic" src="pawprint.jpg" alt="Missing Icon"/>
+                    <div id="bottom"></div>
+            </form>        
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+         <script src="P1submit.js"></script>
+    </body>
+</html>
+
